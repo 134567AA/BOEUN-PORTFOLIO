@@ -1,6 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
-import {motion} from 'framer-motion'
+import styled, { keyframes } from 'styled-components'
+import {animate, motion} from 'framer-motion'
 
 
 export const Box = styled.div`
@@ -11,85 +11,200 @@ text-align: center;
 border-bottom: 1px solid lightgray;
 font-weight: bolder;
 font-size: 30px;
-/* display:flex;
-justify-content : center;
-align-items:center; */
 
 `
 export const aboutBox = styled.div`
 font-family: 'Pretendard-Regular';
 width:1500px;
 height: 100vh;
-text-align: center;
+/* text-align: center; */
 border-bottom: 1px solid lightgray;
-font-weight: bolder;
-font-size: 30px;
-position : relative;
 display:flex;
 justify-content : center;
 align-items:center;
-
+div.flip{
+  width : 85%;
+  height : 700px;
+  perspective : 1000px;
+}
 .aboutIn{
   width : 600px;
+  height : 300px;
   font-size : 20px;
-  display : none;
+  border-radius : 20px;
+  background-color : #bbae35cd;
+  margin-bottom : 20px;
 }
+.aboutIn2{
+  width : 600px;
+  height : 200px;
+  font-size : 20px;
+  border-radius : 20px;
+  background-color : #bbae35cd;
 
-p{
-  font-size : 35px;
 }
-
-`
-export const titleImg = styled(motion.div)`
-  img{
-    height : 300px;
-    width :300px;
-    cursor : pointer;
-  }
- p{
-  border : 1px solid #fff;
-  border-radius : 15px;
-  display : none;
+.flower{
+  animation : flower 3s infinite;
+}
+.flower:hover{
+  animation : none;
+}
+.flipEffect{
+  transform : rotateX(180deg);
+}
+@keyframes flower {
+ 0%{
+  transform : rotate(0deg);
+ }
+ 100%{
+  transform : rotate(360deg);
  }
 
-`
-export const contactBox = styled.div`
-font-family: 'Pretendard-Regular';
-width:1500px;
-height: 100vh;
-text-align: center;
-border-bottom: 1px solid lightgray;
-font-weight: bolder;
-font-size: 30px;
-display: none;
+}
 
-div.flex{
+.more{
+  display : block;
+  position : absolute;
+  right : 150px;
+  bottom : 75px;
+  cursor : pointer;
+}
+.cards{
   width : 100%;
   height : 100%;
-  display:flex;
-  justify-content : center;
-  align-items:center;
+  position : relative;
+  transition : 0.5s;
+  transform-style : preserve-3d;
+
 }
+.aboutfront,.aboutBack{
+  position : absolute;
+  width : 100%;
+  height : 100%;
+  backface-visibility : hidden;
+  color : white;
+
 
 .sns{
+  width : 50%;
+  list-style-type : none;
+  padding: 0;
+  margin:0;
+  line-height : 80px;
+  font-size : 35px;
+}
+.photoIn{
+  width : 50%;
+}
+.photoIn>img{
   width : 300px;
-  height : 300px;
-  border : 1px solid #ffff;
-  font-family : 'Pretendard-Thin';
-  font-size : 30px;
-
 }
-.sns>p{
-  margin-top : 50px;
-  font-size : 25px;
 
-}
-.qrcord{
-  display : none; 
+
 }
 
 `
+export const aboutfront = styled.div`
 
+  border-radius : 20px;
+  background-image : url('img/dd.jpg');
+  display : flex;
+  justify-content : space-evenly;
+  align-items : center;
+
+` 
+export const aboutback = styled.div`
+  display : flex;
+  justify-content : space-around;
+  align-items : center;
+  color : white;
+  border-radius : 20px;
+  background-color :  #bbae35cd;
+  transform: rotateX(180deg);
+
+  .qrcord{
+    position : absolute;
+    top : 0;  
+    right :0;
+  }
+`
+
+export const titleImg = styled(motion.div)`
+  img#emoji{
+    height : 300px;
+    width :300px;
+  }
+
+`
+
+export const skillBox= styled.div`
+  width  : 1500px;
+  height : 100vh;
+  border-bottom : 1px solid #fff;
+  flex-wrap : wrap;
+`
+export const skillFlip = styled.div`
+
+div.flip{
+    width : 250px;
+    height : 400px;
+  perspective : 1100px;
+}
+
+  div.cardIn{
+    width : 100%;
+    height : 100%;
+    position:relative;
+    transition : 0.9s;
+    transform-style : preserve-3d;
+
+  }
+  div.front, div.back {
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  backface-visibility: hidden;
+  color : black;
+  text-align:center;
+border-radius : 20px;
+}
+div.front{
+  background-color : rgba(255,255,255,0.4);
+  display : flex;
+  justify-content : center;
+  align-items : center;
+
+}
+.back { 
+  transform: rotateY(180deg);
+  background-color :  rgba(255,255,255,0.4) ;
+}
+
+// 호버 시 뒤집기
+.flip:hover .cardIn {
+  transform: rotateY(180deg);
+}
+.icon{
+  height : 100%;
+  display : flex;
+  flex-direction : column;
+  justify-content : space-evenly;
+  align-items : center;
+}
+img{
+  width : 90px;
+  display : inline-block;
+
+}
+
+
+
+`
+export const exercise = styled.div`
+  background-color :#ffffff;
+  ;
+
+`
 export const topside = styled.div`
   display:flex;
   flex-direction:column;
@@ -100,9 +215,10 @@ export const topside = styled.div`
 export const topbar = styled.div`
   width :300px;
   display : inline-block;
-  position:fixed;
+  position:fixed;   
   left:20px;
-  display : none;
+
+
   ul,li{
     list-style-type: none;
     padding : 0;
@@ -112,6 +228,7 @@ export const topbar = styled.div`
     font-weight: 300;
     font-size : 25px;
     height: 70px;
+
     transition : font-size 0.5s, font-family 0.3s;   
   }
  
@@ -131,79 +248,78 @@ export const topbar = styled.div`
 
   
 `
+export const scroll = styled.div`
 
-export const featureBox = styled.div`
-font-family: 'Pretendard-Regular';
-width:1500px;
-height: 100vh;
-text-align: center;
-border-bottom: 1px solid lightgray;
-font-weight: bolder;
-font-size: 30px;
-
-display: none;
-div.iconBox{
-  width : 300px;
-  height   : 300px;
-  
-}
-div.te{
-  margin-top : 160px;
-}
-div.iconBox>img{
-  width: 100px;
-  display : inline-block;
-  position : absolute;
-}
-.html{
-  top : 10px;
-  left : 50px;
-}
-.css{
-  top: 10px;
-  left :170px;
-}
-.styled{
-  top : 150px;
-  left : 40px;
-
-}
-.bootstrap{
-  top : 160px;
-  left : 170px;
-}
-.script{
-  top : 80px;
-  left : 50px;
-}
-.jquery{
-  top : 120px;
-  left : 160px;
-}
-.react{
-  top : 100px;
-  left : 35px;
-}
-.nodejs{
-  top : 10px;
-  left : 65px;
-}
-.sql{
-  top : 130px;
-  left : 65px;
-}
 `
-
 
 export const portfolioBox = styled.div`
 font-family: 'Pretendard-Regular';
 width:1500px;
-height: 100vh;
+height: 120vh;
 text-align: center;
 border-bottom: 1px solid lightgray;
 font-weight: bolder;
 font-size: 30px;
-display : none;
+
+div.imgbox{
+  width : 50%;
+  height  : 600px;
+}
+div.imgbox>img{
+  max-width  : 100%;
+  max-height : 100%;
+  border-radius : 15px;
+}
+
+div.descbox{
+  width : 50%;
+  height : 600px;
+  display : flex;
+  flex-direction : column;
+  align-items : center;
+  justify-content : space-between;
+
+}
+.descTitle{
+  border-bottom : 1px solid #f2e729
+}
+.descbox>ul>li:not(.descTitle){
+  font-size : 20px;
+}
+
+.descbox>ul>li{
+  line-height : 100px;
+}
+.swiper-slide{
+  height  : 810px;
+  display : flex;
+  justify-content :center;
+  align-items : center;
+}
+
+.swiper-pagination-bullet-active{
+  background-color : white;
+}
+.swiper-button-prev,.swiper-button-next{
+  color : white;
+}
+.movie,.cafe,.clone,.blog,.restaurant,.weather{
+  /* margin-top : 50px; */
+  height : 100%;
+  width : 1200px;
+  display : flex;
+  align-items : center;
+  justify-content : space-between;
+}
+.icon>a{
+  display : block;
+} 
+.icon{
+  width : 100%;
+  display : flex;
+  justify-content : space-evenly;
+}
+
 `
 
 // 이모지 animation
@@ -225,7 +341,7 @@ export const firstVeriants = {
     
   },
   hover : {
-    scale: 1.5,
+    scale: 1.3,
     transition: { duration: 0.3} ,
 
   }
