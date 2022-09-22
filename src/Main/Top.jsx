@@ -30,10 +30,9 @@ const Top = () => {
        <li onClick={aboutClick}>About</li>
        <li onClick={featuresClick}>Skill</li>
        <li onClick={portfolioClick}>Portfolio</li>   
-
     </Styled.topbar>
 
-<Styled.topside>
+<Styled.topside className='topside'>
     <List about={about} skill={skill} portfolio={portfolio} />
 </Styled.topside>
     

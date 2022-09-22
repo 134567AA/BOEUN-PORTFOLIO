@@ -14,29 +14,20 @@ const About = () => {
   return (
    <>
 
-   <Styled.aboutBox >
+   <Styled.aboutBox>
     <div className='flip'>
       <div className='cards' id='flip'>
         <Styled.aboutfront className='aboutfront'>
             <Styled.titleImg  >
-              <img src="img/thinking.png" alt="emoji"id="emoji" />
+              <img src="img/fish.jpg" alt="emoji"id="emoji" />
             </Styled.titleImg>
-            <div className=''>
               <div className='aboutIn'>
-                  <p> </p>
-                  <p>  </p>
-                  <p> </p>
-              </div>
-              <div className='aboutIn2'>
-          
-                <h1 className='text-center pt-2'>Profile</h1>
+                    <h1 className='text-center pt-3'>Welcome!</h1>
                   <ul>
-                    <li>최보은</li>
-                    <li>1998. 07. 22</li>
+                    <li className='text-center fs-4'>개발자 최보은의 포트폴리오의 오신 걸 환영합니다!</li>
                     <li></li>
                   </ul>
               </div>
-          </div>
         </Styled.aboutfront>
  {/* ******************************* contact  ******************************** */}
       <Styled.aboutback className='aboutBack'>
@@ -46,6 +37,8 @@ const About = () => {
           </div>  
        
       <ul className='sns '>
+        <li><i class="fa-solid fa-user"> : </i> CHOI BOEUN</li>
+        <li><i class="fa-solid fa-cake-candles"> : </i> 1998. 07. 22</li>
         <li><i class="fa-brands fa-github"> :  </i> github.com/134567AA </li>
         <li><i class="fa-regular fa-address-book"> :  </i> 010 - 3384 - 3378 </li>
         <li><i class="fa-regular fa-envelope"> : </i> qhdms50@gmail.com </li>

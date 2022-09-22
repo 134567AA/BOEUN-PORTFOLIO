@@ -8,7 +8,7 @@ const Skill = () => {
   <Styled.skillBox className='d-flex justify-content-evenly align-items-center'>
 
 {/* *********************** front *****************************************/}
-<Styled.skillFlip >
+  <Styled.skillFlip >
       <div className='flip'>
       <div className='cardIn'>
           {/* front */}

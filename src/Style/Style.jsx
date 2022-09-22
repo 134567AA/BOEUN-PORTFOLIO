@@ -2,26 +2,100 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import {animate, motion} from 'framer-motion'
 
+export const topside = styled.div`
+  display:flex;
+  flex-direction:column;
+  align-items: flex-end;
+  justify-content : space-around;
+  
+  
+`
+export const top = styled.p`
+  width : 80px;
+  height : 80px;
+  background-color :  #bbae35cd;
+  border-radius : 50px;
+  position : fixed;
+  bottom : 10px;
+  right : 10px;
+  opacity : 0.8;
+  display :none;
+  text-align:center;
+  display : flex;
+  align-items:center;
+  padding-top : 25px;
 
-export const Box = styled.div`
-font-family: 'Pretendard-Regular';
-width:1500px;
-height: 100vh;
-text-align: center;
-border-bottom: 1px solid lightgray;
-font-weight: bolder;
-font-size: 30px;
+  
+`
+export const topbar = styled.div`
+
+  width :300px;
+  display : inline-block;
+  position : fixed;
+  left:20px;
+
+  @media screen and (max-width : 1024px) {
+    width : 100%;
+    height : 100px;
+    display : flex;
+    justify-content : space-around;
+    align-items : center;
+    padding :0;
+    margin : 0 10px;
+    position : sticky ;
+
+
+  }
+
+  ul,li{
+    list-style-type: none;
+    padding : 0;
+    margin : 0;
+    display:flex;
+    font-family:'Pretendard-Thin';
+    font-weight: 300;
+    font-size : 25px;
+    height: 70px;
+    transition : font-size 0.5s, font-family 0.3s;   
+  }
+ 
+  li:hover{
+    font-size : 30px;
+    font-family :'Pretendard-SemiBold';
+
+  }
+  p{
+    font-family :'Pretendard-SemiBold';
+    font-size:35px;
+    width : 30px;
+    border-radius : 50%;
+        }
+    
+    cursor: pointer;
+  
+`
+
+export const titleImg = styled(motion.div)`
+  img#emoji{
+   max-width : 400px;
+   border-radius : 15px;
+   @media screen and (max-width : 1024px) {
+    max-width : 250px;
+  }
+  }
 
 `
 export const aboutBox = styled.div`
 font-family: 'Pretendard-Regular';
 width:1500px;
 height: 100vh;
-/* text-align: center; */
-border-bottom: 1px solid lightgray;
 display:flex;
 justify-content : center;
 align-items:center;
+@media screen and (max-width : 1024px){
+  width : 1024px;
+
+}
 div.flip{
   width : 85%;
   height : 700px;
@@ -29,22 +103,19 @@ div.flip{
 }
 .aboutIn{
   width : 600px;
-  height : 300px;
+  height : 500px;
   font-size : 20px;
   border-radius : 20px;
   background-color : #bbae35cd;
   margin-bottom : 20px;
+  @media screen and (max-width : 1024px) {
+    width : 500px;
+  }
 }
-.aboutIn2{
-  width : 600px;
-  height : 200px;
-  font-size : 20px;
-  border-radius : 20px;
-  background-color : #bbae35cd;
 
-}
 .flower{
   animation : flower 3s infinite;
+
 }
 .flower:hover{
   animation : none;
@@ -66,8 +137,9 @@ div.flip{
   display : block;
   position : absolute;
   right : 150px;
-  bottom : 75px;
+  bottom : 70px;
   cursor : pointer;
+
 }
 .cards{
   width : 100%;
@@ -92,20 +164,26 @@ div.flip{
   margin:0;
   line-height : 80px;
   font-size : 35px;
+  @media screen and (max-width : 1024px){
+    font-size : 20px;
+
+}
 }
 .photoIn{
   width : 50%;
 }
 .photoIn>img{
   width : 300px;
-}
+  @media screen and (max-width : 1024px){
+  width : 250px;
 
+}
+}
 
 }
 
 `
 export const aboutfront = styled.div`
-
   border-radius : 20px;
   background-image : url('img/dd.jpg');
   display : flex;
@@ -129,19 +207,15 @@ export const aboutback = styled.div`
   }
 `
 
-export const titleImg = styled(motion.div)`
-  img#emoji{
-    height : 300px;
-    width :300px;
-  }
-
-`
 
 export const skillBox= styled.div`
   width  : 1500px;
   height : 100vh;
-  border-bottom : 1px solid #fff;
   flex-wrap : wrap;
+  @media screen and (max-width : 1024px){
+  width : 1024px;
+
+}
 `
 export const skillFlip = styled.div`
 
@@ -149,6 +223,9 @@ div.flip{
     width : 250px;
     height : 400px;
   perspective : 1100px;
+  @media screen and (max-width : 1024px){
+  width : 200px;
+}
 }
 
   div.cardIn{
@@ -200,67 +277,21 @@ img{
 
 
 `
-export const exercise = styled.div`
-  background-color :#ffffff;
-  ;
-
-`
-export const topside = styled.div`
-  display:flex;
-  flex-direction:column;
-  align-items: flex-end;
-  justify-content : space-around;
-`
-
-export const topbar = styled.div`
-  width :300px;
-  display : inline-block;
-  position:fixed;   
-  left:20px;
 
 
-  ul,li{
-    list-style-type: none;
-    padding : 0;
-    margin : 0;
-    display:flex;
-    font-family:'Pretendard-Thin';
-    font-weight: 300;
-    font-size : 25px;
-    height: 70px;
-
-    transition : font-size 0.5s, font-family 0.3s;   
-  }
- 
-  li:hover{
-    font-size : 30px;
-    font-family :'Pretendard-SemiBold';
-
-  }
-  p{
-    font-family :'Pretendard-SemiBold';
-    font-size:35px;
-    width : 30px;
-    border-radius : 50%;
-        }
-    
-    cursor: pointer;
-
-  
-`
-export const scroll = styled.div`
-
-`
 
 export const portfolioBox = styled.div`
 font-family: 'Pretendard-Regular';
 width:1500px;
 height: 120vh;
 text-align: center;
-border-bottom: 1px solid lightgray;
+
 font-weight: bolder;
 font-size: 30px;
+@media screen and (max-width : 1024px){
+  width : 1024px;
 
+}
 div.imgbox{
   width : 50%;
   height  : 600px;
@@ -287,7 +318,7 @@ div.descbox{
   font-size : 20px;
 }
 
-.descbox>ul>li{
+.descbox>ul>li:not(.learn){
   line-height : 100px;
 }
 .swiper-slide{
@@ -346,3 +377,4 @@ export const firstVeriants = {
 
   }
 };
+

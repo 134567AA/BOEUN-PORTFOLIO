@@ -1,14 +1,28 @@
 import React from 'react'
 import About from './About'
 import Portfolio from './Portfolio'
-import styled from 'styled-components'
+import * as Styled from '../Style/Style'
+import $ from 'jquery';
 import Skill from './Skill'
 
 
-const List = ({about,portfolio,skill}) => {
+const List = ({about,portfolio,skill}) => {    
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100){
+      $('.top').show();
+    } else{
+      $('.top').hide();
+    }
+  });
+   const scrolltop = ()=>{ 
+       window.scrollTo({
+      top: 0,
+      behavior: 'smooth'})
+  
 
-
-    
+  }
+ 
+   
 
   return (
    <>
@@ -22,7 +36,9 @@ const List = ({about,portfolio,skill}) => {
     <div ref={portfolio}>
     <Portfolio />
     </div>
-  
+    <Styled.top  className="top" onClick={scrolltop} >
+    TOP
+    </Styled.top>
    </>
   )
 }
