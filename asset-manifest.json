@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BOEUN-PORTFOLIO/static/css/main.c861f3df.css",
+    "main.js": "/BOEUN-PORTFOLIO/static/js/main.fb0d8cab.js",
+    "index.html": "/BOEUN-PORTFOLIO/index.html",
+    "main.c861f3df.css.map": "/BOEUN-PORTFOLIO/static/css/main.c861f3df.css.map",
+    "main.fb0d8cab.js.map": "/BOEUN-PORTFOLIO/static/js/main.fb0d8cab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c861f3df.css",
+    "static/js/main.fb0d8cab.js"
+  ]
+}
