@@ -11,8 +11,8 @@ export const topside = styled.div`
   
 `
 export const top = styled.p`
-  width : 80px;
-  height : 80px;
+  width : 70px;
+  height : 70px;
   background-color :  #bbae35cd;
   border-radius : 50px;
   position : fixed;
@@ -23,7 +23,7 @@ export const top = styled.p`
   text-align:center;
   display : flex;
   align-items:center;
-  padding-top : 25px;
+  padding-top : 20px;
 
   
 `

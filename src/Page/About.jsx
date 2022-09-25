@@ -25,7 +25,7 @@ const About = () => {
                     <h1 className='text-center pt-3'>Welcome!</h1>
                   <ul>
                     <li className='text-center fs-4'>개발자 최보은의 포트폴리오의 오신 걸 환영합니다!</li>
-                    <li></li>
+                    <li>비전공자로 시작해서 프론트엔드가 되기까지!</li>
                   </ul>
               </div>
         </Styled.aboutfront>

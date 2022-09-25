@@ -7,8 +7,9 @@ import Skill from './Skill'
 
 
 const List = ({about,portfolio,skill}) => {    
+
   $(window).scroll(function(){
-    if ($(this).scrollTop() > 100){
+    if ($(this).scrollTop() > 200){
       $('.top').show();
     } else{
       $('.top').hide();
@@ -21,8 +22,6 @@ const List = ({about,portfolio,skill}) => {
   
 
   }
- 
-   
 
   return (
    <>

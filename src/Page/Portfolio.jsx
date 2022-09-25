@@ -14,8 +14,7 @@ const Portfolio = () => {
   return (
     <>    
 
-    <Styled.portfolioBox className='test'>
-  
+    <Styled.portfolioBox >
     <Swiper
       modules={[Autoplay,Keyboard,Navigation, Pagination, Scrollbar]}
       slidesPerView={1}
@@ -204,7 +203,6 @@ const Portfolio = () => {
 
           </ul>
               <div className='icon'>
-                <a href="#"><i class="fa-solid fa-house"></i></a>
                 <a href="https://github.com/134567AA/weather" target="_blank"><i class="fa-brands fa-github"></i> </a>     
               </div>
        </div>
