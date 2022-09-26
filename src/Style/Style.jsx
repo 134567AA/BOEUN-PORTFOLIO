@@ -13,7 +13,7 @@ export const topside = styled.div`
 export const top = styled.p`
   width : 70px;
   height : 70px;
-  background-color :  #5f5c3dcd;
+  background-color : #bbae35cd;
   border-radius : 50px;
   position : fixed;
   bottom : 10px;
@@ -111,7 +111,7 @@ div.flip{
 }
 .aboutIn{
   width : 600px;
-  height : 500px;
+  height : 400px;
   font-size : 20px;
   border-radius : 20px;
   background-color : #bbae35cd;
@@ -125,10 +125,26 @@ div.flip{
     margin : 0;
     padding : 0;
   }
-  text-align : left;
+}
+} 
+.aboutIn2{
+  width : 600px;
+  height : 200px;
+  border-radius : 20px;
+  background-color : #bbae35cd;
+    font-size : 18px;
+  @media screen and (max-width : 1024px) {
+    width : 500px;
+  }
+  @media screen and (max-width : 768px){
+  width : 290px;
+  height : 150px;
+  ul,li{
+    margin : 0;
+    padding : 0;
+  }
 }
 }
-
 .flower{
   animation : flower 3s infinite;
 
@@ -153,7 +169,7 @@ div.flip{
 .more{
   display : block;
   position : absolute;
-  right : 150px;
+  right : 125px;
   bottom : 70px;
   cursor : pointer;
 @media screen and (max-width : 1024px){
@@ -364,7 +380,7 @@ div.descbox{
 
 }
 .descTitle{
-  border-bottom : 1px solid #f2e729
+  border-bottom : 1px solid #f2e729;
 }
 .descbox>ul>li:not(.descTitle){
   font-size : 20px;

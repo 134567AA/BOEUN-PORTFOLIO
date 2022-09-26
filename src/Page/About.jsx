@@ -21,13 +21,22 @@ const About = () => {
             <Styled.titleImg  >
               <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/fish.jpg" alt="emoji"id="emoji" />
             </Styled.titleImg>
-              <div className='aboutIn'>
+            <div className='d-flex flex-column'>
+                <div className='aboutIn'>
                     <h1 className='text-center pt-3'>Welcome!</h1>
                   <ul>
-                    <li className='text-center fs-4'>개발자 최보은의 포트폴리오의 오신 걸 환영합니다!</li>
-                    <li>비전공자로 시작해서 프론트엔드가 되기까지!</li>
+                    <li className='text-center fs-4'></li>
+                    <li></li>
                   </ul>
               </div>
+              <div className='aboutIn2'>
+              <h1 className='text-center pt-3'>Education</h1>
+              <li className='px-3'>  2022.01 ~ 2022.07  풀스택 개발자 과정 수료</li>
+              <li className='px-3'>  2017.03 ~ 2019.02  한양 여자 대학교 실무 중국어과 졸업</li>
+              <li className='px-3'>  2014.03 ~ 2017.02  김포 제일 고등학교 졸업</li>
+              </div>
+            </div>
+            
         </Styled.aboutfront>
  {/* ******************************* contact  ******************************** */}
       <Styled.aboutback className='aboutBack'>
