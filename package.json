@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.0",
     "framer-motion": "^7.2.1",
+    "gh-pages": "^4.0.0",
     "jquery": "^3.6.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
@@ -23,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,5 +48,6 @@
   },
   "main": "index.js",
   "author": "최보은 <98502144+134567AA@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "http://134567AA.github.io/BOEUN-PORTFOLIO/"
 }

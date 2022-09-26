@@ -19,7 +19,7 @@ const About = () => {
       <div className='cards' id='flip'>
         <Styled.aboutfront className='aboutfront'>
             <Styled.titleImg  >
-              <img src="img/fish.jpg" alt="emoji"id="emoji" />
+              <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/fish.jpg" alt="emoji"id="emoji" />
             </Styled.titleImg>
               <div className='aboutIn'>
                     <h1 className='text-center pt-3'>Welcome!</h1>
@@ -33,7 +33,7 @@ const About = () => {
       <Styled.aboutback className='aboutBack'>
     
           <div className='photoIn d-flex justify-content-center'>
-            <img src="img/notebook.png" alt="png" />
+            <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/notebook.png" alt="png" />
           </div>  
        
       <ul className='sns '>
@@ -44,7 +44,7 @@ const About = () => {
         <li><i class="fa-regular fa-envelope"> : </i> qhdms50@gmail.com </li>
     </ul>
         <div className='qrcord'>
-          <img src="img/QRcord.png" alt="qrcord" style={{width:"90px"}}/>
+          <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/QRcord.png" alt="qrcord" style={{width:"90px"}}/>
         </div>
  
       </Styled.aboutback>
@@ -55,7 +55,7 @@ const About = () => {
     <OverlayTrigger placement='top' overlay={
             <Tooltip style={{fontSize : '20px',fontWeight : 300}}>
               Click Me!! </Tooltip>}>
-    <img src="img/flower2.png" alt="flower" className='flower' style={{width : "70px"}} onClick={more}/> 
+    <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/flower2.png" alt="flower" className='flower' style={{width : "70px"}} onClick={more}/> 
     </OverlayTrigger>
     </div>
       

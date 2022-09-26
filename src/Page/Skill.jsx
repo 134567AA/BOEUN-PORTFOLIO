@@ -19,14 +19,14 @@ const Skill = () => {
           <div className='back'>
           <div className='icon'>
             <div> 
-              <img src="img/icon/htmlLogo.png" alt="html icon" className='html' />
-              <img src="img/icon/css-logo.png" alt="css icon" className='css' />
+              <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/icon/htmlLogo.png" alt="html icon" className='html' />
+              <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/icon/css-logo.png" alt="css icon" className='css' />
             </div>
             <div>
-            <img src="img/icon/styledComponent.png" alt="스타일 컴포넌트 icon" className='styled' />
-            <img src="img/icon/bootsrap.png" alt="bootstrap icon" className='bootstrap ' />
+            <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/icon/styledComponent.png" alt="스타일 컴포넌트 icon" className='styled' />
+            <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/icon/bootsrap.png" alt="bootstrap icon" className='bootstrap ' />
             </div>
-            <img src="img/icon/reactJS.png" alt="react" className='react' style={{width : "200px"}} />
+            <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/icon/reactJS.png" alt="react" className='react'  />
           
         </div>
           </div>
@@ -45,8 +45,8 @@ const Skill = () => {
           <div className='back'>  
           <div className='icon'>
           
-          <img src="img/icon/javasccript.png" alt="script" className='script' style={{width : "150px"}} />
-          <img src="img/icon/jquery logo.png" alt="jquery" className='jquery' style={{width : "150px"}} />
+          <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/icon/javasccript.png" alt="script" className='script' style={{width : "150px"}} />
+          <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/icon/jquery logo.png" alt="jquery" className='jquery' style={{width : "150px"}} />
         </div>
           </div>
       </div>
@@ -62,8 +62,8 @@ const Skill = () => {
           </div>
           <div className='back'>
           <div className='icon'>
-          <img src="img/icon/nodejs-1-logo.png" alt="nodejs" className='nodeJs' style={{width : "150px"}} />
-          <img src="img/icon/mysql.png" alt="mysql" style={{width : "150px"}} />
+          <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/icon/nodejs-1-logo.png" alt="nodejs" className='nodeJs' style={{width : "150px"}} />
+          <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/icon/mysql.png" alt="mysql" style={{width : "150px"}} />
         </div>
           </div>
       </div>
@@ -77,7 +77,7 @@ const Skill = () => {
           </div>
           <div className='back'>
           <div className='icon'>
-            <img src="img/icon/q-net.png" alt="q-net" style={{width : "150px"}}  />
+            <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/icon/q-net.png" alt="q-net" style={{width : "150px"}}  />
             <div className='fw-bold'> 
               <p>정보처리 기능사 </p>
               <p>웹 디자인 기능사(필기 합격)</p>

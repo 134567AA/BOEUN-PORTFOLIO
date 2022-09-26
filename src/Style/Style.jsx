@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import {animate, motion} from 'framer-motion'
 
 export const topside = styled.div`
@@ -13,7 +13,7 @@ export const topside = styled.div`
 export const top = styled.p`
   width : 70px;
   height : 70px;
-  background-color :  #bbae35cd;
+  background-color :  #5f5c3dcd;
   border-radius : 50px;
   position : fixed;
   bottom : 10px;
@@ -23,7 +23,7 @@ export const top = styled.p`
   text-align:center;
   display : flex;
   align-items:center;
-  padding-top : 20px;
+  justify-content:center;
 
   
 `
@@ -43,9 +43,14 @@ export const topbar = styled.div`
     padding :0;
     margin : 0 10px;
     position : sticky ;
-
-
+    font-size:15px;
   }
+  @media screen and (max-width : 768px) {
+    width : 100%;
+    font-size : 13px;
+ 
+  }
+
 
   ul,li{
     list-style-type: none;
@@ -90,12 +95,15 @@ font-family: 'Pretendard-Regular';
 width:1500px;
 height: 100vh;
 display:flex;
-justify-content : center;
+justify-content : space-evenly;
 align-items:center;
 @media screen and (max-width : 1024px){
   width : 1024px;
-
 }
+@media screen and (max-width : 768px){
+  width : 768px;
+}
+
 div.flip{
   width : 85%;
   height : 700px;
@@ -111,6 +119,14 @@ div.flip{
   @media screen and (max-width : 1024px) {
     width : 500px;
   }
+  @media screen and (max-width : 768px){
+  width : 290px;
+  ul,li{
+    margin : 0;
+    padding : 0;
+  }
+  text-align : left;
+}
 }
 
 .flower{
@@ -133,12 +149,21 @@ div.flip{
 
 }
 
+
 .more{
   display : block;
   position : absolute;
   right : 150px;
   bottom : 70px;
   cursor : pointer;
+@media screen and (max-width : 1024px){
+  right : 80px;
+  bottom : -30px;
+}
+@media screen and (max-width : 768px) {
+right : 100px;
+bottom : 60px;
+}
 
 }
 .cards{
@@ -165,9 +190,12 @@ div.flip{
   line-height : 80px;
   font-size : 35px;
   @media screen and (max-width : 1024px){
-    font-size : 20px;
-
+    font-size : 20px;   
 }
+@media screen and (max-width : 768px) {
+  font-size : 15px;
+}
+
 }
 .photoIn{
   width : 50%;
@@ -176,7 +204,9 @@ div.flip{
   width : 300px;
   @media screen and (max-width : 1024px){
   width : 250px;
-
+}
+@media screen and (max-width : 768px){
+  width : 200px;
 }
 }
 
@@ -185,7 +215,7 @@ div.flip{
 `
 export const aboutfront = styled.div`
   border-radius : 20px;
-  background-image : url('img/dd.jpg');
+  background-image : url('http://134567AA.github.io/BOEUN-PORTFOLIO/img/dd.jpg');
   display : flex;
   justify-content : space-evenly;
   align-items : center;
@@ -214,7 +244,9 @@ export const skillBox= styled.div`
   flex-wrap : wrap;
   @media screen and (max-width : 1024px){
   width : 1024px;
-
+}
+@media screen and (max-width : 768px){
+  width : 768px;
 }
 `
 export const skillFlip = styled.div`
@@ -225,6 +257,11 @@ div.flip{
   perspective : 1100px;
   @media screen and (max-width : 1024px){
   width : 200px;
+  font-size : 20px;
+}
+@media screen and (max-width : 768px){
+  width : 150px;
+  font-size : 15px;
 }
 }
 
@@ -267,11 +304,20 @@ div.front{
   flex-direction : column;
   justify-content : space-evenly;
   align-items : center;
+
 }
 img{
   width : 90px;
   display : inline-block;
-
+  @media screen and (max-width : 768px){
+  width : 50px;
+}
+}
+.react{
+  width : 200px;
+  @media screen and (max-width : 768px){
+  width : 50px;
+}
 }
 
 
@@ -285,12 +331,18 @@ font-family: 'Pretendard-Regular';
 width:1500px;
 height: 120vh;
 text-align: center;
-
 font-weight: bolder;
 font-size: 30px;
 @media screen and (max-width : 1024px){
   width : 1024px;
-
+  font-size : 27px;
+}
+@media screen and (max-width : 768px){
+  width : 768px;
+  font-size : 20px;
+} 
+.rock{
+  margin-top : 150px;
 }
 div.imgbox{
   width : 50%;
