@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/BOEUN-PORTFOLIO/static/css/main.c861f3df.css",
-    "main.js": "/BOEUN-PORTFOLIO/static/js/main.6624503d.js",
+    "main.js": "/BOEUN-PORTFOLIO/static/js/main.f4da02b5.js",
     "index.html": "/BOEUN-PORTFOLIO/index.html",
     "main.c861f3df.css.map": "/BOEUN-PORTFOLIO/static/css/main.c861f3df.css.map",
-    "main.6624503d.js.map": "/BOEUN-PORTFOLIO/static/js/main.6624503d.js.map"
+    "main.f4da02b5.js.map": "/BOEUN-PORTFOLIO/static/js/main.f4da02b5.js.map"
   },
   "entrypoints": [
     "static/css/main.c861f3df.css",
-    "static/js/main.6624503d.js"
+    "static/js/main.f4da02b5.js"
   ]
 }
