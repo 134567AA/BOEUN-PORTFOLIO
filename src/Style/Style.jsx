@@ -33,17 +33,6 @@ export const topbar = styled.div`
   display : inline-block;
   position : fixed;
   left:20px;
-
-  @media screen and (max-width : 1024px) {
-    width : 100%;
-    height : 100px;
-    display : flex;
-    justify-content : space-around;
-    align-items : center;
-    padding :0;
-    margin : 0 10px;
-    position : sticky ;
-    font-size:15px;
   ul,li{
     list-style-type: none;
     padding : 0;
@@ -69,6 +58,17 @@ export const topbar = styled.div`
         }
     
     cursor: pointer;
+  @media screen and (max-width : 1024px) {
+    width : 100%;
+    height : 100px;
+    display : flex;
+    justify-content : space-around;
+    align-items : center;
+    padding :0;
+    margin : 0 10px;
+    position : sticky ;
+    font-size:15px;
+  
   }
   @media screen and (max-width : 768px) {
     width : 100%;
