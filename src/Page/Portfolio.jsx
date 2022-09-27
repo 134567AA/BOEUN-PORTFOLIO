@@ -89,7 +89,7 @@ const Portfolio = () => {
        <div className='descbox'>
        <ul>
                 <li className='descTitle'>가위 바위 보 </li>
-                <li>개발 인원 : 1인 프로젝트 </li>
+                <li>개발 인원 : 개인 프로젝트 </li>
                 <li>개발 일자 : 22.03</li>
                 <li>개발 언어 :   
                 <img src="http://134567AA.github.io/BOEUN-PORTFOLIO/img/icon/htmlLogo.png" alt="css" style={{width : "70px"}} />

@@ -23,10 +23,12 @@ const About = () => {
             </Styled.titleImg>
             <div className='d-flex flex-column'>
                 <div className='aboutIn'>
-                    <h1 className='text-center pt-3'>Welcome!</h1>
-                  <ul>
-                    <li className='text-center fs-4'></li>
-                    <li></li>
+                    <h1 className='text-center pt-3'>터보 달팽이</h1> 
+            
+                  <ul className='text-center pt-3'>
+                    <li>저는 대학 졸업 후 다양한 경험을 통해 자기 개발에 힘 쓰고 싶었고 지인의 추천으로 개발자에 대한 정보를 알게 되었고 유투브로 자바 프로그래밍 입문을 공부하며 개발에 대한 흥미를 느끼게 되었고 망설임없이 새로운 분야에 도전하게 되었습니다.</li>
+                      <li>비전공자로써 어려움도 많았지만 배움의 새로움을 두려워하지 않고 확실하게 내 것으로 만들기 위해 꾸준하게 노력해왔습니다.
+                    달팽이처럼 지금 당장 보기에 느려 보이지만 확실하게 나만의 노하우를 차곡차곡 쌓아가 평범한 달팽이에서 터보 엔진 장착한 달팽이로 거듭나는 사람입니다!</li>
                   </ul>
               </div>
               <div className='aboutIn2'>

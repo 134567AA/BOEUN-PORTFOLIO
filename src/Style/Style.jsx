@@ -44,14 +44,6 @@ export const topbar = styled.div`
     margin : 0 10px;
     position : sticky ;
     font-size:15px;
-  }
-  @media screen and (max-width : 768px) {
-    width : 100%;
-    font-size : 13px;
- 
-  }
-
-
   ul,li{
     list-style-type: none;
     padding : 0;
@@ -77,6 +69,20 @@ export const topbar = styled.div`
         }
     
     cursor: pointer;
+  }
+  @media screen and (max-width : 768px) {
+    width : 100%;
+    font-size : 13px;
+  }
+  @media screen and (max-width : 390px) {
+    width : 100%;
+    font-size : 11px;
+    font-weight : 200;
+    p{
+      font-size: 20px;
+    }
+  }
+
   
 `
 
@@ -103,6 +109,11 @@ align-items:center;
 @media screen and (max-width : 768px){
   width : 768px;
 }
+@media screen and (max-width : 390px) {
+  width : 390px;
+
+}
+
 
 div.flip{
   width : 85%;
@@ -116,16 +127,35 @@ div.flip{
   border-radius : 20px;
   background-color : #bbae35cd;
   margin-bottom : 20px;
+  h1{
+    font-weight : bold;
+  }
+  ul{
+    width : 95%;
+  }
   @media screen and (max-width : 1024px) {
     width : 500px;
+    h1{
+      font-weight : 400;
+    }
+    ul{
+      width : 95%;
+    }
   }
   @media screen and (max-width : 768px){
   width : 290px;
-  ul,li{
-    margin : 0;
-    padding : 0;
+  height : 350px;
+  font-size : 13px;
+  font-weight : 300;
+  ul{
+    padding-top: 0;
+    width : 95%;
   }
 }
+@media screen and (max-width : 390px) {
+  width : 50%;
+}
+
 } 
 .aboutIn2{
   width : 600px;
@@ -139,11 +169,18 @@ div.flip{
   @media screen and (max-width : 768px){
   width : 290px;
   height : 150px;
+  font-size : 13px;
+  font-weight : 300;
   ul,li{
     margin : 0;
     padding : 0;
+    width : 95%;
   }
 }
+@media screen and (max-width : 390px) {
+  width : 50%;
+}
+
 }
 .flower{
   animation : flower 3s infinite;
@@ -264,6 +301,10 @@ export const skillBox= styled.div`
 @media screen and (max-width : 768px){
   width : 768px;
 }
+@media screen and (max-width : 391px) {
+  width : 390px;
+}
+
 `
 export const skillFlip = styled.div`
 
@@ -278,6 +319,10 @@ div.flip{
 @media screen and (max-width : 768px){
   width : 150px;
   font-size : 15px;
+}
+@media screen and (max-width : 391px) {
+  width : 90px;
+  font-size : 10px;
 }
 }
 
@@ -328,11 +373,17 @@ img{
   @media screen and (max-width : 768px){
   width : 50px;
 }
+@media screen and (max-width : 391px) {
+  width : 30px;
 }
-.react{
+}
+.react,.script,.jquery,.nodejs,.mysql,.q-net{
   width : 200px;
   @media screen and (max-width : 768px){
   width : 50px;
+}
+@media screen and (max-width : 391px) {
+  width : 30px;
 }
 }
 
